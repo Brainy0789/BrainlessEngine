@@ -54,6 +54,13 @@ class MiscSettingsSubState extends BaseOptionsMenu
 			true);
 		addOption(option);
 
+		var option:Option = new Option('Silly Mode',
+			'If checked, something silly happens',
+			'sillyMode',
+			'bool',
+			true);
+		addOption(option);
+
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length-1]];
 
 		super();

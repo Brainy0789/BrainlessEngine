@@ -50,7 +50,7 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	public static var timeBarStyle:String = 'Vanilla';
 	public static var healthBarStyle:String = 'Vanilla';
 	public static var watermarkStyle:String = 'Vanilla';
-	public static var botTxtStyle:String = 'Vanilla'; 
+	public static var botTxtStyle:String = 'Vanilla';
 	public static var strumLitStyle:String = 'Full Anim';
 	public static var bfIconStyle:String = 'Default';
 	public static var ratingType:String = 'Default';
@@ -107,6 +107,9 @@ class ClientPrefs { //default settings if it can't find a save file containing y
 	public static var noGunsRNG:Bool = false;
 	public static var rainbowFPS:Bool = false;
 	public static var noRenderGC:Bool = false;
+
+	//Random Things
+	public static var sillyMode:Bool = false;
 
 	//Unused
 	public static var cursing:Bool = true;
