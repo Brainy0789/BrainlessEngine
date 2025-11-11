@@ -33,8 +33,8 @@
 
   "[json]": {
     // Automatically keep JSON files formatted.
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
@@ -45,8 +45,8 @@
 
   "[jsonc]": {
     // Automatically keep JSONC files formatted.
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.tabWidth": 2,
@@ -120,7 +120,7 @@
     {
       "label": "Debug (official build)",
       "args": ["-debug", "-DofficialBuild"]
-    }
+    },
     {
       "label": "Release",
       "args": ["-release"]

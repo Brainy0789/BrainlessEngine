@@ -15,7 +15,7 @@ class MainMenuState extends MusicBeatState
 {
 	public static final gitCommit:String = HaxeCommit.getGitCommitHash();
 
-	public static var psychEngineJSVersionNumber:String = '1.49.0-prerelease'; //This is also used for Discord RPC
+	public static var psychEngineJSVersionNumber:String = '1.0.0'; //This is also used for Discord RPC
 	public static var psychEngineJSVersion:String = psychEngineJSVersionNumber; //This is also used for Discord RPC
 	public static var psychEngineVersion:String = '0.6.3'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
@@ -50,7 +50,7 @@ class MainMenuState extends MusicBeatState
 
 	var tipsArray:Array<String> = [];
 	var canDoTips:Bool = true; // in case the tips don't exist lol
-	
+
 	var funnycatperson:FlxSprite;
 
 	override function create()
@@ -64,7 +64,7 @@ class MainMenuState extends MusicBeatState
 			canDoTips = false;
 			trace('The tips don\'t exist!');
 		}
-		
+
 		#if FUNNY_ALLOWED
 		if ((FlxG.random.bool(1) && DateUtils.date.getHours() == 3))  {
 			funnycatperson = new FlxSprite().loadGraphic(Paths.image('catto', 'embed'));
@@ -128,7 +128,7 @@ class MainMenuState extends MusicBeatState
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
-		
+
 		if (funnycatperson != null)
 			add(funnycatperson);
 
@@ -379,7 +379,7 @@ class MainMenuState extends MusicBeatState
 			red.scrollFactor.set(0, 0);
 			red.blend = BlendMode.MULTIPLY;
 			add(red);
-			
+
 			FlxG.sound.music.stop();
 
 			final theCrash = FlxG.sound.play(Paths.sound('crash', 'shared'), 1);
