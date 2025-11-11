@@ -36,7 +36,7 @@
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="SHADERS_ALLOWED" unless="flash"/>
 	<define name="FUNNY_ALLOWED" /> <!-- allows any joke related shit -->
-	<define name="VIDEOS_ALLOWED" if="desktop || mobile" unless="32bits || web"/>
+	<define name="VIDEOS_ALLOWED" if="desktop || mobile" unless="32bits || web || mac"/>
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
 	<define name="DISCORD_ALLOWED" if="desktop || mobile" unless="web" />
 

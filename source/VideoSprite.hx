@@ -161,6 +161,7 @@ class VideoSprite extends FlxSpriteGroup {
 	#end
 }
 
+#if VIDEOS_ALLOWED
 @:nullSafety
 class FunkinVideoSprite extends FlxVideoSprite
 {
@@ -203,3 +204,4 @@ class FunkinVideoSprite extends FlxVideoSprite
 		super.onFocusLost();
 	}
 }
+#end
